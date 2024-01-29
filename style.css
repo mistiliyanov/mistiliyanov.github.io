@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font: 48px/1.6 Times, serif;
+    font-weight: 600;
+}
+
+header, main, footer {
+    margin: 2em;
+}
+
+section div {
+    position: relative;
+    width: 30%;
+    height: auto;
+    display: inline-block;
+    border: 5px solid rgb(0,0,0, 0.4)
+}
+
+main svg {
+    height: 100%;
+    display: block;
+}
+
+div p {
+    position: absolute;
+    inset: 0;
+    text-align: center;
+    background-color: aqua;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+div:hover p {
+    opacity: 1;
+}
