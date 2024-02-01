@@ -1,40 +1,65 @@
 * {
     padding: 0;
     margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
     box-sizing: border-box;
 }
 
 h1 {
     font: 48px/1.6 Times, serif;
     font-weight: 600;
+    text-align: center;
 }
 
-header, main, footer {
-    margin: 2em;
+header {
+    margin-bottom: 2em;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 section div {
     position: relative;
-    width: 30%;
+    width: 300px;
     height: auto;
-    display: inline-block;
+    padding: 1em;
+    margin: 2em 0;
     border: 5px solid rgb(0,0,0, 0.4)
 }
 
 main svg {
-    height: 100%;
     display: block;
 }
 
-div p {
+.climbing {
+    box-shadow: -2em -1.5em 1em 2em rgb(0, 0, 0, 0.7) inset;
+}
+
+section div p {
     position: absolute;
     inset: 0;
     text-align: center;
-    background-color: aqua;
+    background-color: gray;
     opacity: 0;
+    color: antiquewhite;
     transition: opacity 1s ease-in;
 }
 
-div:hover p {
+section div:hover p {
     opacity: 1;
+}
+
+.wrapper {
+    width: 95%;
+    height: 100vh;
+    margin: 0 auto;
 }
