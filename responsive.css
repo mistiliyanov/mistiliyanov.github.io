@@ -1,0 +1,6 @@
+@media (max-width: 1500px) {
+    section > div {
+        max-width: 250px;
+        min-width: 100px;
+    }
+}
