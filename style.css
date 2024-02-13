@@ -11,10 +11,11 @@
 
 html {
     box-sizing: border-box;
+    font: 16px/1.6 Cinzel, serif;;
 }
 
 h1 {
-    font: 48px/1.6 Cinzel, serif;
+    font-size: 5em;
     font-weight: 700;
     text-align: center;
     color: darkgoldenrod;
@@ -22,14 +23,14 @@ h1 {
 }
 
 h2 {
-    font: 24px/1.6 Cinzel, serif;
+    font-size: 1.5em;
     padding-top: 2em;
     font-weight: 700;
     text-align: center;
 }
 
 p {
-    font: 16px/1.5 Verdana, sans-serif;
+    font: 1em/1.5 Verdana, sans-serif;
 }
 
 header {
